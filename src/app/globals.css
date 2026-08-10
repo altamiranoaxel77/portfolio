@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+  ====================================================================
+  SISTEMA DE COLOR POR VARIABLES CSS
+  Cambiá estos valores para ajustar la paleta completa del sitio.
+  Formato: canales RGB separados por espacio (para soportar /alpha).
+  ====================================================================
+*/
+
+:root {
+  /* Tema CLARO (blanco hueso, alto contraste) */
+  --background: 249 250 251;   /* casi blanco */
+  --surface: 255 255 255;      /* blanco puro para tarjetas */
+  --surface-hover: 243 244 246;
+  --border: 226 232 240;
+  --foreground: 17 24 39;      /* gris muy oscuro / negro */
+  --muted: 100 116 139;        /* gris medio para texto secundario */
+  --accent: 37 99 235;         /* azul eléctrico */
+  --accent-hover: 29 78 216;
+}
+
+.dark {
+  /* Tema OSCURO (azul medianoche) — por defecto */
+  --background: 8 11 20;       /* negro azulado */
+  --surface: 17 22 38;         /* superficie de tarjetas */
+  --surface-hover: 24 31 52;
+  --border: 38 47 74;
+  --foreground: 237 242 255;   /* blanco frío */
+  --muted: 148 163 196;        /* gris azulado */
+  --accent: 59 130 246;        /* azul eléctrico */
+  --accent-hover: 96 165 250;
+}
+
+* {
+  border-color: rgb(var(--border));
+}
+
+html {
+  scroll-behavior: smooth;
+  /* Compensa el navbar fijo al saltar a una sección por ancla */
+  scroll-padding-top: 5rem;
+}
+
+body {
+  background-color: rgb(var(--background));
+  color: rgb(var(--foreground));
+  /* Transición suave al alternar tema */
+  transition: background-color 0.4s ease, color 0.4s ease;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Respeta la preferencia de movimiento reducido del usuario */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Foco visible para navegación por teclado (accesibilidad) */
+:focus-visible {
+  outline: 2px solid rgb(var(--accent));
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Scrollbar discreto y acorde al tema */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: rgb(var(--background));
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(var(--border));
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(var(--muted));
+}
+
+@layer components {
+  /* Tarjeta con efecto glassmorphism reutilizable */
+  .glass {
+    background-color: rgb(var(--surface) / 0.7);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgb(var(--border) / 0.6);
+  }
+
+  /* Grilla de fondo tipo "terminal" — elemento de firma del sitio */
+  .grid-backdrop {
+    background-image:
+      linear-gradient(rgb(var(--border) / 0.4) 1px, transparent 1px),
+      linear-gradient(90deg, rgb(var(--border) / 0.4) 1px, transparent 1px);
+    background-size: 56px 56px;
+    mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, black 30%, transparent 75%);
+    -webkit-mask-image: radial-gradient(ellipse 80% 60% at 50% 0%, black 30%, transparent 75%);
+  }
+
+  .section-container {
+    @apply mx-auto w-full max-w-6xl px-5 sm:px-8;
+  }
+
+  .eyebrow {
+    @apply font-mono text-xs uppercase tracking-[0.25em] text-accent;
+  }
+}

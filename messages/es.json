@@ -1,0 +1,87 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "skills": "Tecnologías",
+    "projects": "Proyectos",
+    "experience": "Experiencia",
+    "studies": "Estudios",
+    "contact": "Contacto",
+    "theme": "Cambiar tema",
+    "language": "Cambiar idioma",
+    "menu": "Abrir menú",
+    "close": "Cerrar menú"
+  },
+  "hero": {
+    "greeting": "Hola, soy",
+    "intro": "Estudiante avanzado de Licenciatura en Sistemas de Información, apasionado por la programación y en búsqueda continua de nuevos conocimientos. Busco mi primera experiencia profesional para aplicar lo aprendido y contribuir a soluciones de calidad.",
+    "downloadCv": "Descargar CV",
+    "contact": "Contactarme",
+    "available": "Disponible para mi primera experiencia"
+  },
+  "about": {
+    "eyebrow": "Sobre mí",
+    "title": "Un poco sobre quién soy",
+    "p1": "Soy estudiante avanzado de Licenciatura en Sistemas de Información en la UNNE (4° año), con un promedio académico de 8,17. Me apasiona la programación y aprender tecnologías nuevas constantemente.",
+    "p2": "Tengo sólidos conocimientos en programación orientada a objetos, algoritmos y estructuras de datos, bases de datos e ingeniería de software. Trabajo con Python, SQL, JavaScript, HTML y CSS, usando Git y GitHub en mi día a día.",
+    "p3": "Completé un Bootcamp de Data Analyst en Devlights, donde profundicé en análisis de datos con Python, consultas SQL y visualización. Actualmente curso la certificación AWS Certified AI Practitioner, enfocada en fundamentos de IA y Machine Learning.",
+    "p4": "Busco incorporarme a un equipo de tecnología donde pueda aplicar mis conocimientos, ganar experiencia profesional y aportar al desarrollo de soluciones informáticas de calidad."
+  },
+  "skills": {
+    "eyebrow": "Stack",
+    "title": "Tecnologías que utilizo",
+    "subtitle": "Herramientas con las que trabajo a diario, agrupadas por nivel de dominio.",
+    "level": {
+      "advanced": "Avanzado",
+      "intermediate": "Intermedio",
+      "learning": "Aprendiendo"
+    }
+  },
+  "projects": {
+    "eyebrow": "Trabajo",
+    "title": "Proyectos destacados",
+    "subtitle": "Una selección de proyectos que muestran cómo trabajo.",
+    "viewProject": "Ver proyecto",
+    "code": "Código",
+    "filters": {
+      "all": "Todos",
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "fullstack": "Full Stack",
+      "desktop": "Escritorio"
+    }
+  },
+  "experience": {
+    "eyebrow": "Trayectoria",
+    "title": "Experiencia profesional"
+  },
+  "studies": {
+    "eyebrow": "Formación",
+    "title": "Estudios y certificaciones"
+  },
+  "contact": {
+    "eyebrow": "Contacto",
+    "title": "Trabajemos juntos",
+    "subtitle": "¿Tenés un proyecto en mente o una oportunidad? Escribime y te respondo a la brevedad.",
+    "name": "Nombre",
+    "namePlaceholder": "Tu nombre",
+    "email": "Email",
+    "emailPlaceholder": "tu@email.com",
+    "message": "Mensaje",
+    "messagePlaceholder": "Contame sobre tu proyecto...",
+    "send": "Enviar mensaje",
+    "sending": "Enviando...",
+    "success": "¡Mensaje enviado! Te responderé pronto.",
+    "error": "Hubo un error. Probá de nuevo o escribime por otro medio.",
+    "required": "Este campo es obligatorio",
+    "invalidEmail": "Ingresá un email válido"
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados.",
+    "builtWith": "Construido con Next.js, TypeScript y Tailwind CSS."
+  },
+  "common": {
+    "backToTop": "Volver arriba",
+    "loading": "Cargando"
+  }
+}

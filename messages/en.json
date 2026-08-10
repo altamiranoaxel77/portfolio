@@ -1,0 +1,87 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "experience": "Experience",
+    "studies": "Education",
+    "contact": "Contact",
+    "theme": "Toggle theme",
+    "language": "Change language",
+    "menu": "Open menu",
+    "close": "Close menu"
+  },
+  "hero": {
+    "greeting": "Hi, I'm",
+    "intro": "Advanced student of the Information Systems degree, passionate about programming and continuously seeking new knowledge. I'm looking for my first professional experience to apply what I've learned and contribute to quality solutions.",
+    "downloadCv": "Download CV",
+    "contact": "Get in touch",
+    "available": "Open to my first opportunity"
+  },
+  "about": {
+    "eyebrow": "About",
+    "title": "A bit about who I am",
+    "p1": "I'm an advanced student of the Information Systems degree at UNNE (4th year), with an academic GPA of 8.17. I'm passionate about programming and constantly learning new technologies.",
+    "p2": "I have solid knowledge of object-oriented programming, algorithms and data structures, databases and software engineering. I work with Python, SQL, JavaScript, HTML and CSS, using Git and GitHub daily.",
+    "p3": "I completed a Data Analyst Bootcamp at Devlights, where I deepened my skills in data analysis with Python, SQL queries and visualization. I'm currently pursuing the AWS Certified AI Practitioner certification, focused on AI and Machine Learning fundamentals.",
+    "p4": "I'm looking to join a technology team where I can apply my knowledge, gain professional experience and contribute to quality software solutions."
+  },
+  "skills": {
+    "eyebrow": "Stack",
+    "title": "Technologies I use",
+    "subtitle": "Tools I work with daily, grouped by level of expertise.",
+    "level": {
+      "advanced": "Advanced",
+      "intermediate": "Intermediate",
+      "learning": "Learning"
+    }
+  },
+  "projects": {
+    "eyebrow": "Work",
+    "title": "Featured projects",
+    "subtitle": "A selection of projects that show how I work.",
+    "viewProject": "View project",
+    "code": "Code",
+    "filters": {
+      "all": "All",
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "fullstack": "Full Stack",
+      "desktop": "Desktop"
+    }
+  },
+  "experience": {
+    "eyebrow": "Career",
+    "title": "Professional experience"
+  },
+  "studies": {
+    "eyebrow": "Education",
+    "title": "Studies & certifications"
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "title": "Let's work together",
+    "subtitle": "Have a project in mind or an opportunity? Send me a message and I'll get back to you shortly.",
+    "name": "Name",
+    "namePlaceholder": "Your name",
+    "email": "Email",
+    "emailPlaceholder": "you@email.com",
+    "message": "Message",
+    "messagePlaceholder": "Tell me about your project...",
+    "send": "Send message",
+    "sending": "Sending...",
+    "success": "Message sent! I'll get back to you soon.",
+    "error": "Something went wrong. Try again or reach me another way.",
+    "required": "This field is required",
+    "invalidEmail": "Enter a valid email"
+  },
+  "footer": {
+    "rights": "All rights reserved.",
+    "builtWith": "Built with Next.js, TypeScript and Tailwind CSS."
+  },
+  "common": {
+    "backToTop": "Back to top",
+    "loading": "Loading"
+  }
+}
