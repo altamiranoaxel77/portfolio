@@ -23,7 +23,7 @@ const mono = JetBrains_Mono({
   display: 'swap',
 });
 
-const SITE_URL = 'https://tu-dominio.com'; // 👉 Reemplazá con tu dominio
+const SITE_URL = 'https://altamiranoaxelportfolio-developer.vercel.app/';
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
