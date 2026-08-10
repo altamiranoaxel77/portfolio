@@ -28,6 +28,7 @@ export const social: SocialLinks = {
   github: 'https://github.com/altamiranoaxel77',          // 👉 completá con tu GitHub
   linkedin: 'https://www.linkedin.com/in/axel-adrian-altamirano-633b4524b/',   // 👉 completá con tu LinkedIn
   email: 'altamirano.programador@gmail.com',
+  whatsapp: '',
 };
 
 export const stats: Stat[] = [

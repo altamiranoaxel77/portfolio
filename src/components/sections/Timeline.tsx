@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { useLocale, useTranslations } from 'next-intl';
 import { Briefcase, GraduationCap } from 'lucide-react';
 import type { Locale } from '@/types';
-import { experience, studies } from '@/data/experience';
+import { studies } from '@/data/experience';
 import { SectionHeading } from '@/components/ui/SectionHeading';
 import { slideUp, stagger, revealOnScroll } from '@/utils/motion';
 
@@ -50,33 +50,6 @@ function TimelineItem({
   );
 }
 
-export function Experience() {
-  const t = useTranslations('experience');
-  const locale = useLocale() as Locale;
-
-  return (
-    <section id="experience" className="section-container py-24 sm:py-32">
-      <SectionHeading eyebrow={t('eyebrow')} title={t('title')} />
-
-      <motion.ul
-        variants={stagger}
-        {...revealOnScroll}
-        className="relative ml-[18px] space-y-6 border-l border-border pl-0"
-      >
-        {experience.map((item, i) => (
-          <TimelineItem
-            key={i}
-            icon={<Briefcase size={16} />}
-            title={item.company}
-            subtitle={item.role[locale]}
-            date={item.date[locale]}
-            description={item.description[locale]}
-          />
-        ))}
-      </motion.ul>
-    </section>
-  );
-}
 
 export function Studies() {
   const t = useTranslations('studies');
